@@ -4,7 +4,6 @@ This documentation contains codes and pinout for arduino sensors which can be us
 
 List of sensor modules.
 
-Markup:
    1) Temperature sensor module
    2) Vibration switch module
    3) Hall magnetic sensor module
