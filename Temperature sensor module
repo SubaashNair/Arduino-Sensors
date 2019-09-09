@@ -1,3 +1,4 @@
+code(
 #include <OneWire.h>
  
 // DS18S20 Temperature chip i/o
@@ -101,3 +102,4 @@ void loop(void) {
   Serial.print("\n");
   //End conversion to C
 }
+)
