@@ -41,3 +41,4 @@ List of sensor modules.
    Microphone sound sensor module
    Detect the heartbeat module
    Rotary encoder module
+
