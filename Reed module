@@ -1,0 +1,47 @@
+**Example code 1**
+
+int Led = 13 ; // define LED Interface
+int buttonpin = 3; // define the Reed sensor interfaces
+int val ; // define numeric variables val
+void setup ()
+{
+  pinMode (Led, OUTPUT) ; // define LED as output interface
+  pinMode (buttonpin, INPUT) ; // output interface as defined Reed sensor
+}
+void loop ()
+SunFounder{
+  val = digitalRead (buttonpin) ; // digital interface will be assigned a value of 3 to read val
+  if (val == HIGH) // When the Reed sensor detects a signal, LED flashes
+  {
+    digitalWrite (Led, HIGH);
+  }
+  else
+  {
+    digitalWrite (Led, LOW);
+  }
+}
+
+**Example code 2**
+
+// Arduino pin numbers
+//D2 and A0 used on board and connected to D0 and A0 on the module
+//G ground
+//+ 5V
+//open arduino console - upload the code and watch the result
+ 
+const int digital = 2;
+const int analog = 0;
+ 
+void setup()
+{
+pinMode(digital, INPUT);
+Serial.begin(115200);
+}
+ 
+void loop()
+{
+Serial.print(digitalRead(digital));
+Serial.print("-");
+Serial.println(analogRead(analog));
+delay(250);
+}
